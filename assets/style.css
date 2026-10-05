@@ -153,3 +153,8 @@ footer { margin-top: 56px; padding: 28px 0 40px; border-top: 1px solid var(--lin
   .nav, #theme, .tools { display: none; }
   details { border: 0; } details > * { display: block; }
 }
+
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.focus { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.focus .card { margin: 0; }
+section > .wrap > p { max-width: 75ch; }

@@ -51,7 +51,7 @@
       return '<div class="pub"><div class="n">' + p[0] + '.</div><div>' +
         '<div>' + authors(p[1]) + '</div>' +
         '<div class="t">' + esc(p[2]) + '</div>' +
-        '<div><span class="v">' + esc(p[3]) + '</span> <span class="y">(' + p[4] + ')</span>' + doi + '</div></div></div>';
+        '<div><span class="v">' + esc(p[3]) + '</span> <span class="y">(' + p[4] + ')</span>' + (p[7] ? ' <span class="y">· ' + p[7] + ' citations</span>' : '') + doi + '</div></div></div>';
     }).join('') || '<p class="muted">No matches.</p>';
   }
   q.addEventListener('input', render);
